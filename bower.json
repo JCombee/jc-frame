@@ -1,0 +1,24 @@
+{
+  "name": "jc-frame",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JCombee/jc-frame",
+  "authors": [
+    "Jerke Combee <info@jcombee.nl>"
+  ],
+  "description": "This is a HTML Framework made on the Sass language. It is in particulair designed to work as an framework for developing websites.",
+  "main": "init.scss",
+  "keywords": [
+    "sass",
+    "html",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ]
+}
