@@ -1,0 +1,22 @@
+@each $name, $width in $screen-stages {
+	@for $i from 1 through $column-size {
+		.col-#{$name}-#{$i} {
+			@if $animate-columns {
+				@include animate_media_query();
+			}
+			float: left;
+			width: 100%;
+			background-color: red;
+		}
+	}
+}
+
+@each $name, $width in $screen-stages {
+	@media (min-width: #{$width}) {
+		@for $i from 1 through $column-size {
+			.col-#{$name}-#{$i} {
+				width: ( 100% / $column-size ) * $i;
+			}
+		}
+	}
+}

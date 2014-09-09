@@ -1,0 +1,16 @@
+// Setup Screen Stages
+$screen-stages: (xs: 0px, sm: 420px, md: 740px, lg: 960px);
+
+// SETUP CONTAINER
+$container-stages: 
+	(400px, map-get($screen-stages, "sm")),
+	(700px, map-get($screen-stages, "md")),
+	(860px, map-get($screen-stages, "lg")); // (Container Width, Stage Width)
+
+$container-max-width-fluid: 1024px;
+
+$animate-container: true;
+
+// Setup Column
+$column-size: 12;
+$animate-columns: true;

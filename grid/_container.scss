@@ -1,0 +1,22 @@
+.container, .container-fluid {
+	@if $animate-container {
+		@include animate_media_query();
+	}
+
+	width: 100%;
+	position: relative;
+	margin-right: auto;
+  	margin-left: auto;
+}
+
+@each $container-width, $stage-width in $container-stages {
+	@media (min-width: #{$stage-width}) {
+		.container {
+			width: $container-width;
+		}
+	}
+}
+
+.container-fluid {
+	max-width: $container-max-width-fluid;
+}

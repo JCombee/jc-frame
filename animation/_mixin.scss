@@ -1,0 +1,21 @@
+@mixin animate_media_query() {
+  	/* Animation Property */
+	animation-property: width;
+	animation-property: height;
+	transition-duration: $animation-time;
+
+	/* webkit */
+	-webkit-animation-property: width;
+	-webkit-animation-property: height;
+	-webkit-transition-duration: $animation-time;
+
+	/* moz */
+	-moz-animation-property: width;
+	-moz-animation-property: height;
+	-moz-transition-duration: $animation-time;
+
+	/* opera */
+	-o-animation-property: width;
+	-o-animation-property: height;
+	-o-transition-duration: $animation-time;
+}
